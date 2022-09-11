@@ -21,10 +21,6 @@ menu:
       name: Contact 
       url: /contact 
       weight: 200 
-    - identifier: live-in-studio
-      name: Live in de Studio
-      url: /live-in-studio
-      weight: 300
 params: 
   color: "#4f46e5"
   copyright: "Copyright &copy; 2022 Acme Corporation.
