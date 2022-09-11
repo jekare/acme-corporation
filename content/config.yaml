@@ -1,14 +1,7 @@
-baseURL: http://example.org/ 
+baseURL: http://example.org/
 languageCode: en-us 
 title: Acme Corporation 
-theme: Eclectic
-
-enableEmoji: true
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-
+theme: Universal 
 author: 
   facebook: "https://facebook.com/example" 
   twitter: "https://twitter.com/example" 
@@ -48,18 +41,25 @@ params:
     recentCount: 7
   - title: Contact Us
     contact: true
-
   style: blue
   logo: /image/logo.png
   logo_small: /image/logo.png
-  about_us:  >
+  about_us: >
     Acme Corporation is the world's leading manufacturer 
     of digital shapes. From squares and circles to 
     triangles and hexagons, we have it all. Browse through 
     our collection of various forms with different 
-    thicknesses and line styles. We shape the world. 
+    thicknesses and line styles. We shape the world.
     You live in it.
 
 
   recent_posts:
     enable: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    lineNos: true
+enableEmoji: true
