@@ -1,0 +1,5 @@
+baseURL: https://clinquant-bunny-e3fb5e.netlify.app/
+languageCode: en-us 
+title: Acme Corporation 
+theme: Universal 
+enableEmoji: true
