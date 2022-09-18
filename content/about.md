@@ -1,7 +1,7 @@
 ---
 title: About Us
 date: 2022-09-15T00:00:00Z
-description: World's lesding manufacturer of digital shapes.
+description: World's leading manufacturer of digital shapes.
   We shape the world. You live in it.
 draft: false
 ---
