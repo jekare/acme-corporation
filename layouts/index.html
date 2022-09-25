@@ -1,17 +1,23 @@
+---
+{{$title:=(default site.Title $.Title)}}
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Welcome to the website of Acme Corporation, the leading creator of digital shapes on the planet, providing precise shape creations that are ready to use.">
+    {{if $.Description}}
+    <meta name="description" content="{{$.Description}}">
+    {{end}}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css">
-    <title>Acme Corporation</title>
+    {{if $title}}<title>{{$title}}</title>{{end}}
   </head>
   <body class="home">
     <section>
       <img src="./image/logo.svg" alt="Acme Logo" width="64"/>
-      <h1>Acme Corporation</h1>
-      <h2>Shaping the world for you to live in</h2>
+      {{if $.Title}}<h1>{{$.Title}}</h1>{{end}}
+      <h2>{{$.Param "subtitle"}}</h2>
       <a href="./blog">Explore</a>
     </section>
     <footer>
